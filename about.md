@@ -1,6 +1,7 @@
 ---
 layout: default
 title: A Propos
+permalink: /a-propos/
 ---
 # About page
 
