@@ -1,7 +1,50 @@
 ---
 layout: default
-title: Sarah Hans - Webmarketing et Développement web
+title: Sarah Hans - Webmarketing et Développement web à Valence
 ---
-<div class="intro">
-    <h1>Développeur web & Webmarketer à Valence (Drôme)</h1>
+<div class="intro"> 
+     <div class="titre"><h1>Développeur web & Webmarketer à Valence (Drôme)</h1></div>
+</div>
+<!-- Section About-->
+<div class="about">
+    <div class="about-content">
+        <div class="presentation">
+            <h2>Sarah Hans - Petite présentation</h2>
+            <p>Bienvenue sur mon site ! <br/>
+            Je m'appelle <strong>Sarah Hans</strong>, j'ai 35 ans et j'habite à côté de Valence, dans la Drôme (26).<br/>
+            Je suis actuellement en reconversion professionnelle pour devenir <strong>développeur web</strong>. J'ai eu l'opportunité d'intégrer la formation du <strong><a href="https://www.ftalps.com/campus-numerique-in-the-alps-valence/">Campus Numérique In The Alps</a></strong>.<br/>
+            Je suis à la recherche d'une entreprise pour effectuer mon alternance à partir du mois de juin 2021 et ce, pour un an.</p>
+            <p>
+                Avant cela, j'ai travaillé une dizaine d'année dans le domaine du <strong>Webmarketing</strong> et, plus spécifiquement, en tant que Community Manager, Référenceur SEO et Content Manager.<br>
+                Le développement web m'a toujours attirée. Je suis autodidacte en HTML/CSS depuis 2008 et je travaille beaucoup sur <strong>Wordpress</strong>.
+            </p>
+        </div>
+        <div class="photo">
+            <img src="assets/images/sarah-hans.png" alt="Photo de Sarah Hans" width="200px">
+        </div>
+    </div>
+</div>
+
+<!-- Section Skills -->
+<div class="skills">
+    <h2>Mes compétences principales</h2>
+    <div class="trait"><hr></div>
+    <div class="skills-content">
+        {% for item in site.data.skills %}
+            <div class="skills-item">
+                <img src="{{ item.image }}" alt="{{ item.name }}">
+                <h3>{{ item.name }}</h2>
+                <p>{{item.texte}}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Section Expériences Professionnelles -->
+<div class="xp-pro">
+    <h2>Mon parcours professionnel</h2>
+    <div class="trait"><hr></div>
+    <div class="xp-pro-content">
+
+    </div>
 </div>

@@ -1,7 +1,6 @@
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-  - bootstrap
 title: Sarah Hans - Webmarketing et développement web
 description: Bienvenue sur mon cv en ligne. Après 10 ans dans le webmarketing, je me reconvertis dans le développement web. Je recherche actuellement une alternance d'un an.
 url: https://www.sarah-hans.com

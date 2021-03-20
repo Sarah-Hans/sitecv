@@ -11,7 +11,6 @@ gem "jekyll", "~> 4.2"
 group :jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-seo-tag'
-    gem 'bootstrap', '~> 5.0.0.beta2'
   end
 
 gem "webrick", "~> 1.7"
