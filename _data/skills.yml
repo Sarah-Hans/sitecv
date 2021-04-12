@@ -1,9 +1,9 @@
 - name: Développement Web
   image: /assets/images/programmation-web.png
-  texte: PHP (+ framework Laravel), HTML/CSS, Javascript, Bases de données & SQL, Java, Administration Systèmes & Réseaux (bases), Méthode agile SCRUM, GIT
+  texte: PHP, HTML5/CSS3, Javascript (vanilla, jQuery, Node.js), Bases de données & SQL, Java, Administration Systèmes & Réseaux (bases), Méthode agile SCRUM, GIT
 - name: Référencement naturel
   image: /assets/images/seo.png
-  texte: Audit SEO, optimisation technique du site, netlinking, content management
+  texte: Audit SEO, optimisation technique du site, netlinking, content management et web analytics avec des outils comme Google Analytics, Search Console, Yooda SeeURank, Insight
 - name: Community management
   image: /assets/images/reseaux-sociaux.png
-  texte: Stratégie social media et gestion des réseaux sociaux tels que Facebook, Instagram, Twitter, Youtube, Pinterest...
+  texte: Stratégie social media et gestion des réseaux sociaux tels que Facebook, Instagram, Twitter, Youtube, Pinterest. Mise en place de campagnes Facebook Ads.

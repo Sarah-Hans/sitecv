@@ -1,15 +1,27 @@
+$primary : #87919e;
+$secondary: #554640;
+$main-font : 'Nunito', sans-serif;
+$title-font : 'Syne Mono', monospace;
+
+
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $main-font;
+    line-height: 1.6;
+    font-size: 1em;
 }
 
 a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $main-font;
     text-decoration: none;
-    color: #876341;
+    color: $secondary;
+}
+
+a:hover {
+    color: $primary;
 }
 
 h1, h2, h3 {
-    font-family: 'Syne Mono', monospace;
+    font-family: $title-font;
 }
 h1 {
     font-size: 28px;
@@ -20,21 +32,25 @@ body {
 }
 header {
     width: 100%;
-    background-color: #333333;
+    background-color: $secondary;
 }
 .sticky {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
+    z-index: 5;
   }
 
 .header-content {
-    width: 1080px;
+    max-width: 1180px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-between;
     margin: auto;
+    height: 60px;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -67,7 +83,6 @@ nav {
     background-size: 100%;
     width: 100%;
     height: 100%;
-    position: relative;
     min-height: 500px;
     background-repeat: no-repeat;
     display : flex;
@@ -77,7 +92,7 @@ nav {
 .titre {
     background-color:white;
     opacity: 0.70;
-    padding: 20px 50px 20px 50px;
+    padding: 10px 20px 10px 20px;
 }
 
 .about {
@@ -85,33 +100,38 @@ nav {
 }
 
 .about-content {
-    width: 1080px;
+    max-width: 1180px;
     margin: auto;
     display : flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
+    box-sizing:border-box;
 }
 .presentation {
+    width: 60%;
     color: #695262;
 }
 
 .photo {
-    margin-left: 50px;
-    margin-top: 50px;
+    width: 35%;
+}
+
+#portrait {
+    width: 350px;
 }
 
 .skills {
     width: 100%;
-    background-color: #8d676a;
+    background-color: $primary;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .skills h2 {
-    width: 1080px;
     margin: auto;
     text-align: center;
 }
@@ -124,17 +144,20 @@ nav {
 }
 
 .skills-content {
-    width: 1080px;
+    max-width: 1180px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
     padding-top: 20px;
+    margin-bottom: 50px;
 }
 
 .skills-item {
-    width: 33%;
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
 }
 
@@ -142,15 +165,223 @@ nav {
     width: 100px;
 }
 
+.techno {
+    color: $secondary;
+    background: white;
+    opacity: 0.6;
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .xp-pro {
     width: 100%;
-    color: #8d676a;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.xp-pro h2 {
-    width: 1080px;
+#xp-pro-title {
+    max-width: 1180px;
+    color: $secondary;
     margin: auto;
     text-align: center;
+}
+.xp-pro-content {
+    max-width: 1180px;
+    margin: auto;
+}
+
+#contact {
+    width: 100%;
+    padding-top: 50px;
+}
+
+#contact-title {
+    max-width: 1180px;
+    color: $secondary;
+    margin: auto;
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 1180px;
+    margin: auto;
+}
+
+form {
+    width: 100%;
+    font-family: $main-font;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 10px 10px 10px 10px;
+}
+
+#contact-form form input {
+    width: 100%;
+    font-family: $main-font;
+    font-size: 1em;
+    background: none;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    background: none;
+    border : 1px solid #333;
+    font-family: $main-font;
+    font-size: 1em;
+    padding: 10px 10px 10px 10px;
+}
+
+#contact-form button {
+    padding: 15px 15px 15px 15px;
+    font-family: $main-font;
+    font-size: 1em;
+    background: $secondary;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+    
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+footer {
+    padding-top: 20px;
+    width: 100%;
+    background-color: $secondary;
+    color : white;
+}
+
+.footer-content {
+    max-width: 1180px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: auto;
+    height: auto;
+    align-items: auto;
+}
+
+.footer-content ul {
+    font-family: $main-font;
+    font-size: 1em;
+    line-height: 28px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.copyright {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.copyright a {
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1300px) {
+    .header-content, .about-content {
+        max-width: 1100px;
+    }
+
+}
+
+@media only screen and (max-width: 1130px) {
+    .header-content, .about-content {
+        max-width: 1000px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .header-content, .about-content {
+        max-width: 760px;
+    }
+    nav {
+        display : none;
+    }
+
+    #portrait {
+        width: 300px;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .header-content, .about-content {
+        max-width: 560px;
+    }
+    nav {
+        display : none;
+    }
+    .intro {
+        min-height: 250px;
+    }
+    .presentation {
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+    }
+    #portrait {
+        width: 560px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .header-content, .about-content {
+        max-width: 480px;
+    }
+    nav {
+        display : none;
+    }
+    .intro {
+        min-height: 250px;
+    }
+    .presentation {
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+    }
+    #portrait {
+        width: 450px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+
 }

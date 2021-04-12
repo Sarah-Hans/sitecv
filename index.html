@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sarah Hans - Webmarketing et Développement web à Valence
+title: CV de Sarah Hans
 ---
 <div class="intro"> 
      <div class="titre"><h1>Développeur web & Webmarketer à Valence (Drôme)</h1></div>
@@ -8,8 +8,8 @@ title: Sarah Hans - Webmarketing et Développement web à Valence
 <!-- Section About-->
 <div class="about">
     <div class="about-content">
-        <div class="presentation">
-            <h2>Sarah Hans - Petite présentation</h2>
+        <div class="presentation" id="intro">
+            <h2>A Propos</h2>
             <p>Bienvenue sur mon site ! <br/>
             Je m'appelle <strong>Sarah Hans</strong>, j'ai 35 ans et j'habite à côté de Valence, dans la Drôme (26).<br/>
             Je suis actuellement en reconversion professionnelle pour devenir <strong>développeur web</strong>. J'ai eu l'opportunité d'intégrer la formation du <strong><a href="https://www.ftalps.com/campus-numerique-in-the-alps-valence/">Campus Numérique In The Alps</a></strong>.<br/>
@@ -18,15 +18,23 @@ title: Sarah Hans - Webmarketing et Développement web à Valence
                 Avant cela, j'ai travaillé une dizaine d'année dans le domaine du <strong>Webmarketing</strong> et, plus spécifiquement, en tant que Community Manager, Référenceur SEO et Content Manager.<br>
                 Le développement web m'a toujours attirée. Je suis autodidacte en HTML/CSS depuis 2008 et je travaille beaucoup sur <strong>Wordpress</strong>.
             </p>
+            <h3>Je recherche une alternance d'un an en développement web !</h3>
+            <p><strong>Où ?</strong> Valence (Drôme) et environs et/ou télétravail</p>
+            <p><strong>Quand ?</strong> A partir du 7 juin et pour une durée de 12 mois.</p>
+            <p><strong>A quel rythme ?</strong> Deux - trois semaines en entreprise et deux semaines au campus pendant 6 mois. Ensuite, les 6 mois suivants à 90% en entreprise.</p>
+            <p><strong>Quand ?</strong> A partir du 7 juin et pour une durée de 12 mois.</p>
+            <p><strong>Exigeances pour la formation : </strong> Au moins 50% de code au niveau des missions et tuteur en entreprise pouvant être là en support.</p>
         </div>
         <div class="photo">
-            <img src="assets/images/sarah-hans.png" alt="Photo de Sarah Hans" width="200px">
+            <img src="assets/images/sarah-hans-portrait.jpg" alt="Photo de Sarah Hans" id="portrait">
+            <p><strong>Téléchargez mon CV en PDF :</strong></p><a href="">
+            <img src="../assets/images/pdf.png" width="50px" alt="Télécharger le CV en PDF" title="Télécharger mon CV en PDF"></a>
         </div>
     </div>
 </div>
 
 <!-- Section Skills -->
-<div class="skills">
+<div class="skills" id="skills">
     <h2>Mes compétences principales</h2>
     <div class="trait"><hr></div>
     <div class="skills-content">
@@ -38,13 +46,195 @@ title: Sarah Hans - Webmarketing et Développement web à Valence
             </div>
         {% endfor %}
     </div>
+    <h2>Environnement technique, langages et outils utilisés</h2>
+    <div class="trait"><hr></div>
+    <div class="skills-content">
+      <div class="techno">
+        <h3>Systèmes d'exploitation</h3>
+        <p>Mac OS, Windows, Linux</p>
+      </div>
+      <div class="techno">
+        <h3>Outils de développement</h3>
+        <p>VS Code, PHP Storm, Docker, Virtual Box, GIT, MAMP</p>
+      </div>
+      <div class="techno">
+        <h3>Outils graphiques</h3>
+        <p>Photoshop, Figma, Lightroom, Filmora</p>
+      </div>
+      <div class="techno">
+        <h3>Langages</h3>
+        <p>HTML5/CSS3, PHP, Javascript, jQuery, Java</p>
+      </div>
+      <div class="techno">
+        <h3>CMS</h3>
+        <p>Wordpress</p>
+      </div>
+      <div class="techno">
+        <h3>Frameworks</h3>
+        <p>Laravel, Node.js, Bootstrap, Jekyll</p>
+      </div>
+  </div>
 </div>
 
-<!-- Section Expériences Professionnelles -->
-<div class="xp-pro">
-    <h2>Mon parcours professionnel</h2>
+<!-- Section Expériences Professionnelles & Formations -->
+<div class="xp-pro" id="xp-pro">
+    <h2 id="xp-pro-title">Expériences professionnelles & formations</h2>
     <div class="trait"><hr></div>
     <div class="xp-pro-content">
-
+        <section class="timeline">
+            <div class="container">
+              <div class="timeline-item">
+                <div class="timeline-img"></div>
+          
+                <div class="timeline-content js--fadeInLeft">
+                  <h3>Formation Technicien Développeur</h3>
+                  <div class="date">30 NOVEMBRE 2020</div>
+                  <p><strong>Campus Numérique in The Alps - Valence (26)</strong></p>
+                  <a href="https://le-campus-numerique.fr" target="_blank" class="logo-entreprise"><img src="assets/images/logo-campus.png" alt="Logo Campus Numérique In The Alps" width="300px"></a>
+                  <p>Formation sur 18 mois (6 mois campus et 12 mois en alternance) afin de devenir développeur web. <br>
+                  Technologies apprises : HTML5/CSS3, PHP, Javascript, Bases de données & SQL, Java, GIT, méthode agile SCRUM, administration serveur Linux.
+                  </p>
+                </div>
+              </div> 
+          
+              <div class="timeline-item">
+          
+                <div class="timeline-img"></div>
+          
+                <div class="timeline-content js--fadeInRight">
+                    <h3>Community & Product Manager</h3>
+                    <div class="date">MAI 2018</div>
+                    <p><strong>MON CHEVAL - Chabeuil (26)</strong></p>
+                    <a href="https://www.mon-cheval.fr" target="_blank"><img src="assets/images/logo-moncheval.png" alt="Logo Sellerie Mon Cheval" width="300px"></a>
+                    <p>Gestion de la communauté sur Facebook et Instagram, gestion du site e-commerce (Magento), SEO, Adwords, Facebook Ads, Newsletters, rédaction web, web analytics, SAV, suivi des commandes et des fournisseurs, expédition des colis.</p>
+                </div>
+          
+              </div>   
+          
+              <div class="timeline-item">
+          
+                <div class="timeline-img"></div>
+          
+                <div class="timeline-content js--fadeInLeft">
+                  <h3>Community manager et rédactrice SEO</h3>
+                  <div class="date">AVRIL 2017</div>
+                  <p><strong>VIVANDIS - Saint-Etienne (42)</strong></p>
+                  <a href="https://www.vivandis.fr" target="_blank"><img src="assets/images/logo-vivandis.png" alt="Logo Agence Vivandis" width="300px"></a>
+                  <p>Création et animation de pages Facebook, rédaction web, SEO, Campagnes Adwords, Création de sites sous Wordpress, Web Analytics.</p>
+                </div>
+              </div>   
+          
+              <div class="timeline-item">
+          
+                <div class="timeline-img"></div>
+          
+                <div class="timeline-content js--fadeInRight">
+                  <h3>Community & Product Manager</h3>
+                  <div class="date">JUIN 2015</div>
+                  <p><strong>MON CHEVAL - Chabeuil (26)</strong></p>
+                  <a href="https://www.mon-cheval.fr" target="_blank"><img src="assets/images/logo-moncheval.png" alt="Logo Sellerie Mon Cheval" width="300px"></a>
+                  <p>eGestion de la communauté sur Facebook et Instagram, gestion du site e-commerce (Magento), SEO, Adwords, Facebook Ads, Newsletters, rédaction web, web analytics.</p>
+                </div>
+              </div>   
+          
+              <div class="timeline-item">
+          
+                <div class="timeline-img"></div>
+          
+                <div class="timeline-content js--fadeInLeft">
+                    <h3>Webmarketer</h3>
+                    <div class="date">SEPTEMBRE 2014</div>
+                    <p><strong>VALRHONA (Foodconnexion) - Tain l'Hermitage (26)</strong></p>
+                    <a href="https://www.foodconnexion.com" target="_blank"><img src="assets/images/logo-foodconnexion.jpg" alt="Logo FoodConnexion" width="150px"></a>
+                    <p>Mise en place de la stratégie webmarketing d'acquisition. Audit & recommandations SEO. Social media management. Gestion des campagnes d'e-mailing & newsletters. Rédaction des messages sur tous les supports de communication. Campagnes Facebook ADS.</p>
+                </div>
+              </div>   
+          
+              <div class="timeline-item">
+          
+                <div class="timeline-img"></div>
+          
+                <div class="timeline-content js--fadeInRight">
+                    <h3>Responsable Webmarketing</h3>
+                    <div class="date">Février 2013</div>
+                    <p><strong>TOO EASY - Valence (26)</strong></p>
+                    <a href="https://www.tooeasy.fr" target="_blank"><img src="assets/images/logo-tooeasy.png" alt="Logo Too Easy" width="300px"></a>
+                    <p>Elaboration et gestion des stratégies webmarketing, référencement naturel SEO, campagnes SEA (Adwords, Bing Ads, Facebook Ads), web analytics (Google Analytics, SeeURank), formations aux clients de l'agence.</p>
+                </div>
+              </div>  
+          
+              <div class="timeline-item">
+          
+                <div class="timeline-img"></div>
+          
+                <div class="timeline-content js--fadeInLeft">
+                  <div class="date">Avril 2011</div>
+                  <h3>Chargée de Webmarketing</h3>
+                  <p><strong>LA SOURIS VERTE - Tarascon (13)</strong></p>
+                  <img src="assets/images/logo-lasourisverte.jpg" alt="Logo La Souris Verte" width="300px">
+                  <p>Support en gestion de projets web, référencement naturel, social media management, intégration HTML5/CSS3, création de newsletters, formations aux clients, Adwords, Web analytics.</p>
+                </div>
+              </div>   
+          
+              <div class="timeline-item">
+          
+                <div class="timeline-img"></div>
+          
+                <div class="timeline-content js--fadeInRight">
+                    <h3>Master 1 ICD et Master 2 IDEMM</h3>
+                    <div class="date">2009 - 2011</div>
+                    <p><strong>Université Lille 3</strong></p>
+                    <a href="https://deccid.univ-lille.fr/sid/formation/master-info-doc/idemm/" target="_blank"><img src="assets/images/logo-universite-lille3.png" alt="Logo Université Lille 3" width="300px"></a>
+                    <p>Deux années de master orientées information et communication sur le support numérique/web.</p>
+                </div>
+              </div>  
+          
+              <div class="timeline-item">
+          
+                <div class="timeline-img"></div>
+          
+                <div class="timeline-content js--fadeInLeft">
+                  <div class="date">2006 - 2009</div>
+                  <h3>Bachelier en Information et Communication</h3>
+                  <p><strong>Université Libre de Bruxelles</strong></p>
+                  <a href="https://www.ulb.be/fr/programme/ba-comm-1#presentation" target="_blank"><img src="assets/images/Logo-ULB.png" alt="Logo Université Libre de Bruxelles" width="300px"></a>
+                  <p>Trois années de Bachelier en Information et Communication (journalisme) avec option Technologies de l'information (Java, Algorithmique, Bases de données).</p>
+                </div>
+              </div>   
+            </div>
+          </section>
     </div>
+</div>
+
+<!-- Section Loisirs -->
+<div class="skills" id="loisirs">
+  <h2>Mes loisirs</h2>
+  <div class="trait"><hr></div>
+  <div class="skills-content">
+    {% for item in site.data.loisirs %}
+    <div class="skills-item">
+        <img src="{{ item.image }}" alt="{{ item.name }}">
+        <h3>{{ item.name }}</h2>
+        <p>{{item.texte}}</p>
+    </div>
+{% endfor %}
+  </div>
+</div>
+
+<!-- Section Formulaire de Contact -->
+<div id="contact">
+  <h2 id="contact-title">Contactez-moi</h2>
+  <div class="trait"><hr></div>
+  <div id="contact-form">
+    <form action="https://formspree.io/f/xbjqjbnk" method="POST">
+      <input type="hidden" name="_subject" value="Nouvelle prise de contact !" />
+      <input type="text" name="_name" placeholder="Nom et prénom">
+      <input type="email" name="_replyto" placeholder="E-mail">
+      <textarea name="_message" placeholder="Votre message..."></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+    <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22580.680987282645!2d4.933078510434378!3d44.97242347274591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f551298848f5f3%3A0x408ab2ae4bfb890!2s26320%20Saint-Marcel-l%C3%A8s-Valence!5e0!3m2!1sfr!2sfr!4v1618232076673!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
 </div>

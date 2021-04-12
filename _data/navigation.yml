@@ -1,4 +1,12 @@
 - name: Accueil
   link: /
 - name: A Propos
-  link: /a-propos/
+  link: "#intro"
+- name : Compétences
+  link : "#skills"
+- name : Expériences
+  link : "#xp-pro"
+- name : Loisirs
+  link : "#loisirs"
+- name : Contact
+  link : "#contact"
