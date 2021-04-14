@@ -13,11 +13,6 @@ p {
 a {
     font-family: $main-font;
     text-decoration: none;
-    color: $secondary;
-}
-
-a:hover {
-    color: $primary;
 }
 
 h1, h2, h3 {
@@ -77,6 +72,41 @@ nav {
 .itemnav:hover {
     border-bottom: white 1px solid;
 }
+#nav-mobile {
+    display: none;
+}
+.menu-burger {
+    border : none;
+    background : url(/assets/images/menu-burger.svg) center center / 100% 100% no-repeat;
+    width: 30px;
+    height: 30px;
+    text-indent: -6000px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+.dropdown-content a {
+    color: black;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    min-width: 100%;
+    text-align: center;
+  }
+.show {
+    display: block;
+}
 
 .intro {
     background-image: url("/assets/images/code-php-macbookair-2.jpg");
@@ -112,15 +142,29 @@ nav {
 }
 .presentation {
     width: 60%;
-    color: #695262;
+    color: #333;
+}
+
+.presentation a {
+    font-family: $main-font;
+    text-decoration: none;
+    color: $secondary;
+}
+
+.presentation a:hover {
+    color: $primary;
 }
 
 .photo {
     width: 35%;
+    box-sizing: border-box;
 }
 
 #portrait {
     width: 350px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    border-radius: 50% 20% / 10% 40%;
 }
 
 .skills {
@@ -174,6 +218,7 @@ nav {
     padding-right: 10px;
     text-align: center;
     margin-bottom: 20px;
+    border-radius: 25% 10%;
 }
 
 .xp-pro {
@@ -191,6 +236,17 @@ nav {
 .xp-pro-content {
     max-width: 1180px;
     margin: auto;
+}
+
+#loisirs a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#loisirs a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 #contact {
@@ -220,30 +276,31 @@ form {
     align-items: center;
     margin-bottom: 50px;
     padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
 }
 
 #contact-form form input {
     width: 100%;
     font-family: $main-font;
     font-size: 1em;
-    background: none;
-    border-bottom: 1px solid black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    background: white;
+    border: 1px solid #333;
+    border-radius: 100px;
     padding: 10px 10px 10px 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 textarea {
     width: 100%;
     min-height: 200px;
-    background: none;
+    background: white;
     border : 1px solid #333;
+    border-radius: 50px;
     font-family: $main-font;
     font-size: 1em;
-    padding: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 10px;
 }
 
 #contact-form button {
@@ -278,6 +335,11 @@ footer {
     color : white;
 }
 
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
 .footer-content {
     max-width: 1180px;
     display: flex;
@@ -308,34 +370,59 @@ footer {
 }
 
 @media only screen and (max-width: 1300px) {
-    .header-content, .about-content {
+    .header-content, .about-content, .skills-content, .xp-pro-content, #contact-form, .footer-content {
         max-width: 1100px;
     }
 
 }
 
 @media only screen and (max-width: 1130px) {
-    .header-content, .about-content {
+    .header-content, .about-content, .skills-content, .xp-pro-content, #contact-form, .footer-content {
         max-width: 1000px;
     }
 
 }
 
 @media only screen and (max-width: 1024px) {
-    .header-content, .about-content {
+    .header-content, .about-content, .skills-content, .xp-pro-content, #contact-form, .footer-content {
         max-width: 760px;
     }
     nav {
         display : none;
     }
+    .intro {
+        min-height: 350px;
+    }
+    .presentation {
+        width: 100%;
+    }
 
+    .photo {
+        width: 100%;
+    }
     #portrait {
-        width: 300px;
+        width: 560px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .skills-item {
+        width: 100%;
+    }
+
+    .techno {
+        width: 100%;
+    }
+    .bloc-footer {
+        width: 100%;
+    }
+    #nav-mobile {
+        display: block;
     }
 
 }
 @media only screen and (max-width: 768px) {
-    .header-content, .about-content {
+    .header-content, .about-content, .skills-content, .xp-pro-content, #contact-form, .footer-content {
         max-width: 560px;
     }
     nav {
@@ -357,11 +444,24 @@ footer {
     h1 {
         font-size: 20px;
     }
+    .skills-item {
+        width: 100%;
+    }
+
+    .techno {
+        width: 100%;
+    }
+    .bloc-footer {
+        width: 100%;
+    }
+    #nav-mobile {
+        display: block;
+    }
 
 }
 
 @media only screen and (max-width: 576px) {
-    .header-content, .about-content {
+    .header-content, .about-content, .skills-content, .xp-pro-content, #contact-form, .footer-content {
         max-width: 480px;
     }
     nav {
@@ -382,6 +482,20 @@ footer {
     }
     h1 {
         font-size: 18px;
+    }
+
+    .skills-item {
+        width: 100%;
+    }
+
+    .techno {
+        width: 100%;
+    }
+    .bloc-footer {
+        width: 100%;
+    }
+    #nav-mobile {
+        display: block;
     }
 
 }

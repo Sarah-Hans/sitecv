@@ -1,9 +1,9 @@
 - name: Elevage de chats de race
   image: /assets/images/cat.png
-  texte: Depuis 2016, j'élève des chats de race British Longhair et je participe à des expositions félines. Chatterie des Perles de Satin
+  texte: Depuis 2016, j'élève des chats de race British Longhair et je participe à des expositions félines.<br> <a href="https://www.perles-de-satin.fr">Chatterie des Perles de Satin</a>
 - name: Photographie
   image: /assets/images/photo-camera.png
-  texte: Photographie animalière, paysages et villages avec un reflex numérique et plusieurs objectifs adaptés en tant qu'amateur. Traitement avec Lightroom.
+  texte: Photographie animalière, paysages et villages avec un reflex numérique et plusieurs objectifs. Traitement avec le logiciel Adobe Lightroom.
 - name: Balades et escapades
   image: /assets/images/sign-post.png
-  texte: Escapades d'une journée ou plusieurs jours dans les jolis coins de Drôme/Ardèche et d'ailleurs.
+  texte: Escapades d'une journée ou plusieurs jours dans les jolis coins de Drôme/Ardèche et d'ailleurs. Voyages dans d'autres pays. Randonnées et balades dans la nature.

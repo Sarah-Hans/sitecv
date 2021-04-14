@@ -3,3 +3,11 @@
       <div class="itemnav"><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></div>
     {% endfor %}
  </nav>
+ <div id="nav-mobile">
+  <button class="menu-burger" title="Aller au menu">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    {% for item in site.data.navigation %}
+    <div class="itemnav_mobile"><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></div>
+    {% endfor %}
+  </div>
+</div>
